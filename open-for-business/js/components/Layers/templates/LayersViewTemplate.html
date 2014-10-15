@@ -1,0 +1,22 @@
+<div class="layers">
+	<b>Select a Map Parameter:</b><br>
+
+	<% _.each(layers, function(layer, i) { %>
+
+		<div class="radio">
+		  <label>
+		    <input type="radio" 
+		    	name="layersRadios" 
+		    	value="<%= layer.code %>" 
+		    	data-name="<%= layer.name %>" 
+		    	data-color="<%= layer.color %>" 
+		    	data-unit="<%= layer.unit %>" 
+		    	<% if (layer.default) { %> checked <% } %>
+	    	>
+		    <%= layer.name %>
+		  </label>
+		</div>
+
+	<% }); %>
+
+</div>

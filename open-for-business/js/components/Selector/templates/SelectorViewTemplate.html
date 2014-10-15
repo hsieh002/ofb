@@ -1,0 +1,70 @@
+<p class="guideline-text"><%= guideline %></p>
+<div class="ba-selectors fluid"></div>
+
+<div class="reset-selectors">
+	<button type="button" class="btn btn-default btn-reset" style="display:none">
+		<span class="back glyphicon glyphicon-circle-arrow-left"></span> Back  	
+	</button>
+	<div class='breadcrumbs show-with-map' style="display:none"></div>
+    <div class="external-tools show-links" style="display:none">
+		<div class="links">
+	    <a href="mailto:<%= feedbackTo %>?&subject=OFB%20Feedback" onclick="app.gaveFeedback=true;">Send Feedback</a>
+	  	<a id="privacyStatementLink" data-toggle="modal" data-target="#privacyStatement">Privacy Statement</a>
+
+            <!-- Modal -->
+			<div class="modal fade" id="privacyStatement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h4 class="modal-title" id="myModalLabel">PRIVACY ACT STATEMENT</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>The collection of your personal information for the Census is Open For Business Tool Prototype        Application is authorized under 5 U.S.C. Section 301 and 44 U.S.C. 3101.</p>
+<p>The purpose for collecting this information is to obtain feedback from Small Business Development Center counselors to better understand their needs and measure the effectiveness of the Census is Open For Business Tool Prototype Application.</p>
+                        
+<p>Personally identifiable information (PII) collected from you may include your email address, username, and physical mailing address.</p>
+
+<p>Disclosure of this information is permitted under the Privacy Act of 1974 (5 U.S.C. 552a) to be shared among Census Bureau staff for work-related purposes.</p>
+
+<p>Providing this information is voluntary.  There are no penalties for failure to supply requested information.</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+            
+
+		</div>
+  </div>
+  <div class="external-tools show-with-map" style="display:none">
+		<div class="links">
+	  	<a id="thirdPartyDataLink" data-toggle="modal" data-target="#addOtherData">Add Other Data</a>
+            
+            
+			<!-- Modal -->
+			<div class="modal fade" id="addOtherData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h4 class="modal-title" id="myModalLabel">NOTE</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Future versions of this tool will allow users to incorporate additional data 
+			        	into this tool, including other information from the Census Bureau as well as 
+			        	your own data and data from other public and private sources. Entrepreneurs 
+			        	should use care in adding these other datasets, as they may not be completely 
+			        	compatible with or comparable to the presented Census Bureau data.  
+			        	Please use the Feedback button to provide input on the type (and format) of the 
+			        	additional data you'd like to incorporate.</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+
+
+		</div>
+  </div>
+</div>
